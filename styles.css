@@ -1,0 +1,132 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+.hi-section {
+  width: 100vw;
+  height: 600px;
+  background-color: #87509c;
+}
+.nav-ul {
+  text-transform: uppercase;
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-link {
+  color: white;
+  font-size: 16px;
+}
+.logo-link {
+  height: 38px;
+  font-size: 0;
+}
+nav {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding-left: 11vw;
+  padding-right: 9vw;
+  margin-top: 55px;
+}
+.nav-li {
+  padding: 7px 15px;
+  border-radius: 3px;
+  transition: all 0.35s;
+}
+.nav-li:hover {
+  background-color: #643a79;
+}
+.hi-text {
+  font-size: 26px;
+  color: #f7f3ea;
+  font-weight: bold;
+  text-align: center;
+  margin: 140px 10vw 50px;
+}
+.sec1-btn {
+  outline: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  height: 70px;
+  width: 300px;
+  margin: 50px auto;
+  color: white;
+  background-color: #eb7d4b;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.14);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding-left: 11px;
+}
+.sec1-btn:hover {
+  background-color: #e76629;
+}
+.sec1-btn span {
+  transition: all 0.5s;
+}
+.sec1-btn span::after {
+  content: " \00bb";
+  font-size: 20px;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+.sec1-btn:hover span {
+  padding-right: 30px;
+}
+.sec1-btn:hover span::after {
+  opacity: 1;
+  right: 0;
+  display: inline;
+}
+.sec1-btn:active {
+  transition: all 0.1s;
+  background-color: #d85315;
+}
+.services-section {
+  height: 750px;
+  width: 100vw;
+  background-color: #17c2a4;
+}
+
+.serv-heading {
+  font-family: roboto;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 40px;
+  margin: 120px auto 0px;
+  text-align: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+.serv-hr {
+  width: 90px;
+  height: 5px;
+  margin: 20px auto 23px;
+  background-color: black;
+  opacity: 0.14;
+  border-radius: 5px;
+}
+.serv-text {
+  text-align: center;
+  color: white;
+  font-family: roboto;
+  font-size: 18px;
+  margin-left: 18vw;
+  margin-right: 18vw;
+}
