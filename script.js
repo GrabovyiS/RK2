@@ -28,3 +28,97 @@ function change(item){
         }, 500)
     }
 }
+//кнопка под слайдером должна добавлять по одному диву с картинками на каждый таб. Пусть она будет работать только один раз и потом пропадать
+let counter = 0;
+function more (){
+    counter = counter+1;
+    console.log(counter)
+    if (counter > 1){
+        let btn = document.getElementById('more-btn');
+        btn.classList.add('disappear')
+        setTimeout(function(){
+            document.getElementById
+            btn.classList.add('donothing');            
+        },500)
+    }
+    if (counter > 2){
+        return
+    }
+    myTab1 = document.getElementById('tab1');
+    myTab2 = document.getElementById('tab2');
+    myTab3 = document.getElementById('tab3');
+    myTab4 = document.getElementById('tab4');
+
+    let newCard1 = document.createElement('div');
+    newCard1.classList.add('port-imges-div');
+    newCard1.classList.add('disappear');
+    
+    let cardImg1 = document.createElement('img');
+    cardImg1.classList.add('port-img');
+    cardImg1.setAttribute('src','./images/1@1X.png');
+
+    let cardH11 = document.createElement('h1');
+    cardH11.classList.add('port-img-heading');
+    cardH11.innerHTML = 'Mock-Up'
+
+    newCard1.appendChild(cardImg1);
+    newCard1.appendChild(cardH11);
+
+setTimeout(function(){
+    newCard1.classList.add('appear')
+},10)
+    myTab1.appendChild(newCard1);
+    
+    let newCard2 = document.createElement('div');
+    newCard2.classList.add('port-imges-div');
+    newCard2.classList.add('disappear')
+    
+    let cardImg2 = document.createElement('img');
+    cardImg2.classList.add('port-img');
+    cardImg2.setAttribute('src','./images/2@1X.png');
+
+    let cardH12 = document.createElement('h1');
+    cardH12.classList.add('port-img-heading');
+    cardH12.innerHTML = 'Web-Apps'
+
+    newCard2.appendChild(cardImg2);
+    newCard2.appendChild(cardH12);
+
+    setTimeout(function(){
+    newCard2.classList.add('appear')
+    },10)
+    myTab2.appendChild(newCard2);
+    let newCard3 = document.createElement('div');
+    newCard3.classList.add('port-imges-div');
+    
+    let cardImg3 = document.createElement('img');
+    cardImg3.classList.add('port-img');
+    cardImg3.setAttribute('src','./images/3@1X.png');
+    
+    let cardH13 = document.createElement('h1');
+    cardH13.classList.add('port-img-heading');
+    cardH13.innerHTML = 'Apps'
+    
+    newCard3.appendChild(cardImg3);
+    newCard3.appendChild(cardH13);
+    
+    
+    myTab3.appendChild(newCard3);
+
+    let newCard4 = document.createElement('div');
+    newCard4.classList.add('port-imges-div');
+    
+    let cardImg4 = document.createElement('img');
+    cardImg4.classList.add('port-img');
+    cardImg4.setAttribute('src','./images/4@1X.png');
+    
+    let cardH14 = document.createElement('h1');
+    cardH14.classList.add('port-img-heading');
+    cardH14.innerHTML = 'Nice Icons'
+    
+    newCard4.appendChild(cardImg4);
+    newCard4.appendChild(cardH14);
+    
+    
+    myTab4.appendChild(newCard4);
+}

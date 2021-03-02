@@ -9,7 +9,8 @@
 }
 .hi-section {
   width: 100vw;
-  height: 600px;
+  padding-bottom: 120px;
+  height: auto;
   background-color: #87509c;
 }
 .nav-ul {
@@ -305,16 +306,26 @@ nav {
 }
 .port-imges-div {
   margin-left: 20px;
+  margin-bottom: 30px;
 }
 .port-button {
-  margin: 80px auto 0px;
+  margin: 50px auto 0px;
   background-color: #17c2a4;
 }
 .port-button:hover {
   background-color: #09997f;
 }
+.port-button:active {
+  background-color: #066b59;
+}
 .tab {
   display: none;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.none {
+  display: hidden;
+  cursor: initial;
 }
 .tab.is-active {
   display: flex;
@@ -332,4 +343,227 @@ nav {
 .appear {
   opacity: 1;
   transition: opacity 0.5s;
+}
+.pplsay {
+  background-color: #d74680;
+  padding: 120px 0px;
+}
+.main-font {
+  font-family: Titillium Web, sans-serif;
+}
+.sec-font {
+  font-family: roboto, sans-serif;
+}
+.ppl-text {
+  margin-bottom: 70px;
+}
+.port-img {
+  max-width: 90vw;
+}
+.port-btns {
+  max-width: 95vw;
+}
+.ppl-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+.ppl-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+.ppl-card {
+  display: flex;
+  align-items: flex-start;
+  width: 475px;
+  max-width: 95vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ppl-card-text {
+  width: 325px;
+  margin-top: 15px;
+}
+.ppl-card-main-text {
+  font-style: italic;
+  font-family: sans-serif;
+  font-style: 18px;
+  margin-bottom: 28px;
+  color: white;
+  line-height: 26px;
+}
+.ppl-card-name {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  font-family: roboto, sans-serif;
+  margin-bottom: 10px;
+}
+.ppl-card-position {
+  font-size: 18px;
+  font-family: roboto, sans-serif;
+  color: #ffdd99;
+}
+.wrapper-one {
+  margin-bottom: 150px;
+}
+@media (max-width: 989px) {
+  .wrapper-one {
+    margin-bottom: 0px;
+  }
+  .ppl-card {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .nav-ul {
+    width: 60vw;
+  }
+  .nav-bar {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .ppl-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 355px) {
+  .ppl-card-text {
+    width: 290px;
+  }
+}
+@media (max-width: 400px) {
+  .sec1-btn {
+    width: 100vw;
+    padding: 0px;
+  }
+  .tch-btn {
+    width: 100vw;
+  }
+}
+.tch {
+  background-color: #3c5499;
+  padding: 120px 0px;
+}
+.tch-margin {
+  margin-bottom: 75px;
+}
+form input,
+form textarea {
+  outline: none;
+  background-color: #273a71;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border: 2px solid #273a71;
+  border-radius: 5px;
+  height: 60px;
+  width: 415px;
+  max-width: 90vw;
+  display: block;
+  padding: 25px;
+  transition: all 0.2s;
+}
+form textarea {
+  height: 200px !important;
+  resize: none;
+}
+form {
+  width: 860px;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 18px;
+  color: white;
+  opacity: 1;
+}
+.tch-form-dual {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.single {
+  width: 100%;
+  height: 200px;
+}
+footer {
+  padding: 50px;
+  background-color: #344b8e;
+}
+footer a {
+  font-size: 24px;
+  color: white;
+  text-transform: capitalize;
+  transition: all 0.4s;
+  font-weight: bolder;
+}
+footer a:hover {
+  color: #30bae7;
+}
+footer ul {
+  display: flex;
+  margin: 0 5vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+footer ul a {
+  margin-left: 10px;
+}
+.tch-btn {
+  background-color: #30bae7;
+  margin-bottom: 0;
+}
+.tch-btn:hover {
+  background-color: #1585aa;
+}
+.tch-btn:active {
+  background: #0f6581;
+}
+.transparent {
+  opacity: 0;
+}
+.transition {
+  transition: all 0.5s;
+}
+.normal {
+  opacity: 1;
+}
+form input:focus,
+form textarea:focus {
+  border-bottom: 2px solid white;
+}
+@media (max-width: 935px) {
+  .tch-form-dual {
+    flex-wrap: wrap;
+    /* Нужно сделать складывание формы для мобилок */
+  }
+  .tch-input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+/* осталось: модальное окно по кнопке в первой секции, красная звёздочка, адаптив для первой секции */
+.none {
+  display: none;
+}
+nav {
+  height: auto;
+}
+.donothing {
+  pointer-events: none;
+}
+@media (max-width: 565px) {
+  .nav-logo {
+    width: 60px;
+  }
+  .nav-ul {
+    width: 70vw;
+    flex-wrap: wrap;
+  }
 }

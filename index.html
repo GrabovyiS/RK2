@@ -13,7 +13,7 @@
   <div class="hi-section">
     <nav class="nav-bar">
       <a class="logo-link" href="#"><img class="nav-logo" src="./images/logo.png" alt="logo"></a>
-      <ul class="nav-ul">
+      <ul class="nav-ul nav-ul-media">
         <li class="nav-li"><a href="#" class="nav-link">home</a></li>
         <li class="nav-li"><a href="#" class="nav-link">about</a></li>
         <li class="nav-li"><a href="#" class="nav-link">work</a></li>
@@ -147,7 +147,7 @@
           <button class="port-btn" data-tab-name="tab-3">Apps</button>
           <button class="port-btn" data-tab-name="tab-4">Icons</button>
         </div>
-        <div class="port-imges tab tab1 is-active">
+        <div id="tab1" class="port-imges tab tab1 is-active">
           <div class="port-imges-div">
               <img class="port-img" src="./images/1@1X.png" alt="">
               <h1 class="port-img-heading">Isometric Perspective Mock-Up</h1>
@@ -157,7 +157,7 @@
               <h1 class="port-img-heading">Time Zone App UI</h1>
           </div>
         </div>
-        <div class="port-imges tab tab2 disappear">
+        <div id="tab2" class="port-imges tab tab2 disappear">
           <div class="port-imges-div">
               <img class="port-img" src="./images/2@1X.png" alt="">
               <h1 class="port-img-heading">Isometric Mock-Up</h1>
@@ -167,7 +167,7 @@
               <h1 class="port-img-heading">Time Zone App UI</h1>
           </div>
         </div>
-        <div class="port-imges tab tab3 disappear">
+        <div id="tab3" class="port-imges tab tab3 disappear">
           <div class="port-imges-div">
               <img class="port-img" src="./images/3@1X.png" alt="">
               <h1 class="port-img-heading">Isometric Perspective Mock-Up</h1>
@@ -177,7 +177,7 @@
               <h1 class="port-img-heading">App UI</h1>
           </div>
         </div>
-        <div class="port-imges tab tab4 disappear">
+        <div id="tab4" class="port-imges tab tab4 disappear">
           <div class="port-imges-div">
               <img class="port-img" src="./images/4@1X.png" alt="">
               <h1 class="port-img-heading">Isometric Perspective Mock-Up</h1>
@@ -189,8 +189,79 @@
         </div>
       </div>
     </div>
-    <button class="port-button sec1-btn">Load more projects</button>
+    <button id="more-btn" onclick="more()" class="port-button sec1-btn">Load more projects</button>
   </div>
+  <div class="pplsay">
+    <h1 class="serv-heading">what people say about us</h1>
+    <div class="serv-hr"></div>
+    <p class="serv-text ppl-text">Our clients love us!</p>
+    <div class="ppl-card-wrapper wrapper-one">
+      <div class="ppl-card">
+        <img src="./images/Base@1X.png" alt="" class="ppl-img">
+        <div class="ppl-card-text">
+          <p class="ppl-card-main-text">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+          </p>
+          <p class="ppl-card-name">Chanel Iman</p>
+          <p class="ppl-card-position">CEO of Pinterest</p>
+        </div>
+      </div>
+      <div class="ppl-card">
+        <img src="./images/Base@1X.png" alt="" class="ppl-img">
+        <div class="ppl-card-text">
+          <p class="ppl-card-main-text">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+          </p>
+          <p class="ppl-card-name">ADRIANA LIMA</p>
+          <p class="ppl-card-position">Founder of Instagram</p>
+          </div>
+        </div>
+    </div>
+    <div class="ppl-card-wrapper">
+      <div class="ppl-card">
+        <img src="./images/Base@1X.png" alt="" class="ppl-img">
+        <div class="ppl-card-text">
+          <p class="ppl-card-main-text">“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”
+
+          </p>
+          <p class="ppl-card-name">ANNE HATHAWAY</p>
+          <p class="ppl-card-position">Lead Designer at Behance</p>
+        </div>
+      </div>
+      <div class="ppl-card">
+        <img src="./images/Base@1X.png" alt="" class="ppl-img">
+        <div class="ppl-card-text">
+          <p class="ppl-card-main-text">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+
+          </p>
+          <p class="ppl-card-name">EMMA STONE</p>
+          <p class="ppl-card-position">Co-Founder of Shazam</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="tch">
+    <h1 class="serv-heading">GET IN TOUCH</h1>
+    <div class="serv-hr"></div>
+    <p class="serv-text ppl-text tch-margin">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+    <form action="" class="tch-form">
+      <div class="tch-form-dual">
+        <input name="first-name" type="text" class="tch-input" placeholder="Your Name*">
+        <input name="electronic-mail" type="text" class="tch-input" placeholder="Your Email*">
+      </div>
+      <textarea name="message" class="single tch-textarea" placeholder="Your Message*"></textarea>
+      <button class="tch-btn sec1-btn">Send message</button>  
+    </form>
+  </div>
+  <footer>
+    <ul class="footer-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Google+</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Behance</a>
+      <a href="#">Dribble</a>
+      <a href="https://github.com/GrabovyiS">GitHub</a>
+    </ul>
+  </footer>
   <script src="./script.js"></script>
 </body>
 </html>
