@@ -10,19 +10,36 @@
     rel="stylesheet">
 </head>
 <body>
-  <div class="hi-section">
-    <nav class="nav-bar">
-      <a class="logo-link" href="#"><img class="nav-logo" src="./images/logo.png" alt="logo"></a>
-      <ul class="nav-ul nav-ul-media">
-        <li class="nav-li"><a href="#" class="nav-link">home</a></li>
-        <li class="nav-li"><a href="#" class="nav-link">about</a></li>
-        <li class="nav-li"><a href="#" class="nav-link">work</a></li>
-        <li class="nav-li"><a href="#" class="nav-link">blog</a></li>
-        <li class="nav-li"><a href="#" class="nav-link">contact</a></li>
-      </ul>
-    </nav>
-    <p class="hi-text">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</p>
-    <button class="sec1-btn"><span>work with us!</span></button>
+  <div class="popup swoop">
+    <div class="popup-heading">
+      <h1 class="popup-h1">Work with us!</h1>
+      <button class="close-button">x</button>
+    </div>
+    <div class="popup-hr"></div>
+    <div class="popup-main">
+      <p class="popup-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo culpa quidem laboriosam sit soluta animi. Nam ducimus consequatur minus!
+      </p>
+    </div>
+  </div>
+  <nav class="top-nav-bar">
+    <div class="hamburger" id="ham">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+    </div>
+    <a href="" class="logo-in-nav"><img class="logo-image" src="images/logo.png" alt=""></a>
+    <ul class="nav-links">
+        <li class="top-nav-li"><a href="">home</a></li>
+        <li class="top-nav-li"><a href="">about</a></li>
+        <li class="top-nav-li"><a href="">work</a></li>
+        <li class="top-nav-li"><a href="">blog</a></li>
+        <li class="top-nav-li"><a href="">contact</a></li>
+    </ul>
+  </nav>
+  <div class="section1">
+    <p class="section1-p hi-text">Hi there! We are the new kids on the block and we build beautiful websites and applications!</p>
+    <button class="sec1-btn openBtn"><span>work with us</span></button>
   </div>
   <div class="services-section">
     <h1 class="serv-heading">services we provide</h1>
@@ -262,6 +279,7 @@
       <a href="https://github.com/GrabovyiS">GitHub</a>
     </ul>
   </footer>
+  <div class="overlay"></div>
   <script src="./script.js"></script>
 </body>
 </html>
