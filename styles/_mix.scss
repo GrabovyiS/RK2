@@ -1,0 +1,71 @@
+$white: #f1efe4;
+$dark: #3c4761;
+
+@mixin title {
+  font-family: roboto;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 40px;
+  margin: 0px auto 0px;
+  text-align: center;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+@mixin subtitle {
+  text-align: center;
+  font-family: roboto;
+  font-size: 18px;
+  margin-left: 18vw;
+  margin-right: 18vw;
+  margin-bottom: 65px;
+}
+@mixin card-title {
+  font-size: 24px;
+  font-family: roboto, sans-serif;
+  text-transform: uppercase;
+  margin: 80px auto 25px;
+  text-align: center;
+}
+@mixin card-text {
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+@mixin card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+@mixin card {
+  width: 260px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@mixin section($back-color) {
+  width: 100vw;
+  padding: 120px 0;
+  background-color: $back-color;
+}
+@mixin button($btn-color) {
+  outline: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  height: 70px;
+  width: 300px;
+  margin: 50px auto;
+  color: white;
+  background-color: $btn-color;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.14);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding-left: 11px;
+}
