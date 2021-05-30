@@ -1,13 +1,9 @@
-@import "mix";
+@use "mix" as *;
 @use 'sass:map';
 @use 'sass:color';
 
-$orange: color.lighten(orange, 10%);
-
-$myMap: (
-  "fs18": "font-size:18px",
-  "fs40": "font-size:40px",
-);
+$orange: orange;
+$myColor: color.mix(#c00060, #394ec9, 60%);
 
 * {
   list-style-type: none;
@@ -22,7 +18,7 @@ $myMap: (
   display: none;
 }
 .section1 {
-  @include section(#87509c);
+  @include section($myColor);
   padding-top: 0;
 }
 .top-nav-bar {
@@ -53,6 +49,9 @@ $myMap: (
   width: 35vw;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 700px) {
+    display: none;
+  }
   > li {
     padding: 7px;
     height: auto;
@@ -79,6 +78,9 @@ $myMap: (
 }
 .sec1-btn {
   @include button($orange);
+  @media (max-width: 600px) {
+    width: 80%;
+  }
   &:hover {
     background-color: #e76629;
     > span {
@@ -215,6 +217,7 @@ $myMap: (
   color: black;
   font-size: 16px;
   text-transform: uppercase;
+
   & + .active-btn {
     background-color: white;
   }

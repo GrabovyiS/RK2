@@ -1,13 +1,11 @@
-@use 'sass:map';
-@use 'sass:color';
+@charset "UTF-8";
 * {
   list-style-type: none;
   text-decoration: none;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Titillium Web", sans-serif;
 }
 
@@ -18,7 +16,7 @@
 .section1 {
   width: 100vw;
   padding: 120px 0;
-  background-color: #87509c;
+  background-color: #8a1f8a;
   padding-top: 0;
 }
 
@@ -26,63 +24,46 @@
   background-color: #87509c;
   height: 150px;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 12vw;
 }
-
 .top-nav-bar .logo-in-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .logo-image {
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: 8px;
   border-radius: 3px;
 }
-
 .logo-image:hover {
   background-color: #5c2c6e;
 }
 
 .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 35vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+}
 .nav-links > li {
   padding: 7px;
   height: auto;
   width: auto;
   border-radius: 5px;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
 .nav-links > li:hover {
   background-color: #5c2c6e;
 }
-
 .nav-links > li > a {
   text-transform: uppercase;
   color: #f1efe4;
@@ -106,46 +87,41 @@
   width: 300px;
   margin: 50px auto;
   color: white;
-  background-color: #f59c17;
+  background-color: orange;
   border-radius: 5px;
   border: none;
   border-bottom: 10px solid rgba(0, 0, 0, 0.14);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding-left: 11px;
 }
-
+@media (max-width: 600px) {
+  .sec1-btn {
+    width: 80%;
+  }
+}
 .sec1-btn:hover {
   background-color: #e76629;
 }
-
 .sec1-btn:hover > span {
   padding-right: 30px;
 }
-
 .sec1-btn:hover > span::after {
   opacity: 1;
 }
-
 .sec1-btn:active {
-  -webkit-transition: all 0.1s;
   transition: all 0.1s;
   background-color: #d85315;
 }
-
 .sec1-btn > span {
-  -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
-
 .sec1-btn > span::after {
-  content: " \00bb";
+  content: " »";
   font-size: 20px;
   opacity: 0;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -188,42 +164,26 @@
 }
 
 .serv-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
 .serv-card {
   width: 260px;
   margin: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 .serv-card img {
   margin: 0 auto;
   display: block;
-  -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
 }
-
 .serv-card:hover img {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .serv-card-h {
@@ -263,20 +223,14 @@
 }
 
 .skills-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
 .skill-card-img {
   margin: 0 auto;
-  -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
 
@@ -293,28 +247,17 @@
 .skill-card {
   width: 260px;
   margin: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 .skill-card img {
   margin: 0 auto;
   display: block;
-  -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
 }
-
 .skill-card:hover img {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .skills-text, .port-text {
@@ -345,17 +288,14 @@
   border: none;
   border-bottom: 10px solid rgba(0, 0, 0, 0.14);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding-left: 11px;
 }
-
 .port-button:hover {
   background-color: #118872;
 }
-
 .port-button:active {
   background-color: #0c6454;
 }
@@ -371,38 +311,28 @@
   font-size: 16px;
   text-transform: uppercase;
 }
-
 .port-btn + .active-btn {
   background-color: white;
 }
 
 .port-btns {
   margin-bottom: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 27.5vw;
   min-width: 300px;
   margin: auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 60px;
 }
 
 .port-imges {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
 .port-imges .port-imges-div {
   margin-bottom: 30px;
   text-align: center;
 }
+
 /*# sourceMappingURL=style.css.map */
